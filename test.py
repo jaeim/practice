@@ -1,4 +1,8 @@
-scores = [1, 10, 10, 3]
-maxi_idx = scores.index(max(scores))
-
-print(maxi_idx)
+base = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for i in base.lower():
+    base.append(i)
+for i in range(10):
+    base.append(str(i))
+base[62] = '+'
+base[63] = '/'
+print(base)
